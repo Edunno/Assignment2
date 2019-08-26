@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -140,6 +140,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plane: {fileID: 318922700}
   s: {fileID: 1264450331}
+--- !u!114 &200766247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200766245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8072df6efd2eed74ebc696fce1e5df47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &318922700 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100026, guid: 7e1741de780e13f42a448fdb5b60c1e1,
@@ -335,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8d3968294210ba4a9d2bb96dfa74a16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Target: {fileID: 0}
+  m_Target: {fileID: 2031886537}
   m_AutoTargetPlayer: 1
   m_UpdateType: 0
   m_MoveSpeed: 3
@@ -604,6 +616,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plane: {fileID: 318922700}
   s: {fileID: 1264450331}
+--- !u!114 &1070740901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070740899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8072df6efd2eed74ebc696fce1e5df47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1264450330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,3 +1096,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e1741de780e13f42a448fdb5b60c1e1, type: 3}
+--- !u!4 &2031886537 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400026, guid: 7e1741de780e13f42a448fdb5b60c1e1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2031886536}
+  m_PrefabAsset: {fileID: 0}

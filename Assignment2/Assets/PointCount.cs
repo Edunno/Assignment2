@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 public class PointCount : MonoBehaviour
 {
     private int points;
@@ -19,5 +20,6 @@ public class PointCount : MonoBehaviour
 
     public void addPoints(){
         points++;
+        GameObject.Find("Text").transform.DOShakePosition(2f,5,10,70,false,true);
     }
 }

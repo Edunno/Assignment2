@@ -25,7 +25,7 @@ public class fireGun : MonoBehaviour
             ASource.Play();
             Destroy(deployedFlare,1);
             GameObject tempB = (GameObject) Instantiate(bullet,this.transform.position,Quaternion.identity);
-            tempB.GetComponent<Rigidbody>().AddForce(this.transform.right*200);
+            tempB.GetComponent<Rigidbody>().AddForce(this.transform.right*70);
             Destroy(tempB,10);
         }
     }
