@@ -23,8 +23,9 @@ public class fireGun : MonoBehaviour
             flarePos.y = flarePos.y-(float)0.2;
             GameObject deployedFlare = (GameObject) Instantiate(flare,flarePos,Quaternion.identity);
             ASource.Play();
+            float pitchAngle = 90;//Vector3.Angle(new Vector3(1,0,1),Camera.main.transform.eulerAngles.normalized);
             Destroy(deployedFlare,1);
-            GameObject tempB = (GameObject) Instantiate(bullet,this.transform.position,Quaternion.identity);
+            GameObject tempB = (GameObject) Instantiate(bullet,new Vector3(this.transform.position.x,this.transform.position.y+0.1f,this.transform.position.z),Quaternion.AngleAxis(pitchAngle,Camera.main.transform.right));
             tempB.GetComponent<Rigidbody>().AddForce(this.transform.right*80);
             Destroy(tempB,10);
         }

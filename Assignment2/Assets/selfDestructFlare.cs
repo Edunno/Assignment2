@@ -20,9 +20,7 @@ public class selfDestructFlare : MonoBehaviour
         
     }
      void OnTriggerEnter(Collider other){
-         print("so far");
         if(other.tag == "Enemy"){
-            print("so good");
             Destroy(other.gameObject);
         }
     }
